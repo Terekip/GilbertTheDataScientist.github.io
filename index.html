@@ -21,108 +21,85 @@
   <div id="wrapper" class="fade-in">
 
     <!-- Intro Section -->
-    <div id="intro">
+    <section id="intro" class="major">
       <img src="images/we.jpg" alt="Portrait of Gilbert Terer" 
-        style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:20px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);">
+        style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);">
 
       <h1>Kiprotich Gilbert Terer</h1>
       <h2>AI Engineer & Data Scientist</h2>
       
       <p>
-        Passionate about turning raw data into actionable insights. 
-        Skilled in <strong>machine learning, predictive analytics, and data visualization</strong>, 
-        I build solutions that solve real-world problems across healthcare, business, and technology.
+        I specialize in <strong>machine learning, predictive analytics, and data visualization</strong>.  
+        I build data-driven solutions that improve decision-making across healthcare, finance, and technology.
       </p>
-      
-      <ul class="actions">
-        <li><a href="#projects" class="button icon solid solo fa-arrow-down scrolly">Explore Projects</a></li>
-      </ul>
-    </div>
 
-    <!-- Header -->
-    <header id="header">
-      <a href="index.html" class="logo">My Portfolio</a>
-    </header>
-
-    <!-- Navigation -->
-    <nav id="nav">
-      <ul class="links">
-        <li class="active"><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="actions special">
+        <li><a href="cv/GilbertTererCV.pdf" class="button primary icon solid fa-download" target="_blank">Download CV</a></li>
       </ul>
+
       <ul class="icons">
         <li><a href="https://www.linkedin.com/in/kiprotich-terer-81532050/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
         <li><a href="https://github.com/Terekip" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
       </ul>
-    </nav>
+    </section>
 
-    <!-- Main Content -->
-    <div id="main">
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="posts">
 
-      <!-- Featured Project -->
-      <article class="post featured" id="projects">
-        <header class="major">
-          <h2><a href="https://github.com/Terekip/HealthPredict" target="_blank">Patient Number Prediction Model</a></h2>
-          <p>
-            Developed predictive models using <strong>Prophet</strong> and <strong>SARIMAX</strong> 
-            to forecast patient numbers in hospitals.  
-            Helps in resource allocation and preparing healthcare systems for patient surges.
-          </p>
-        </header>
-        <a href="https://github.com/Terekip/HealthPredict" target="_blank" class="image main">
-          <img src="images/Health.avif" alt="Patient prediction project illustration" />
-        </a>
-        <ul class="actions special">
-          <li><a href="https://github.com/Terekip/HealthPredict" target="_blank" class="button large">View Project</a></li>
-        </ul>
-      </article>
-
-      <!-- Other Projects -->
-      <section class="posts">
         <article>
-          <header>
-            <h2><a href="https://github.com/Terekip/COVID-19-EDA" target="_blank">COVID-19 Data Exploration (SQL)</a></h2>
-          </header>
+          <h3>Patient Number Prediction Model</h3>
+          <a href="https://github.com/Terekip/HealthPredict" target="_blank" class="image fit">
+            <img src="images/Health.avif" alt="Patient prediction project illustration" />
+          </a>
+          <p>
+            Built predictive models with <strong>Prophet</strong> and <strong>SARIMAX</strong> to forecast patient numbers.  
+            Helps hospitals allocate resources effectively.
+          </p>
+          <a href="https://github.com/Terekip/HealthPredict" target="_blank" class="button">View Project</a>
+        </article>
+
+        <article>
+          <h3>COVID-19 Data Exploration (SQL)</h3>
           <a href="https://github.com/Terekip/COVID-19-EDA" target="_blank" class="image fit">
             <img src="images/covid19.jpg" alt="COVID-19 SQL analysis visualization" />
           </a>
-          <p>Performed exploratory data analysis on COVID-19 datasets using SQL Server.</p>
-          <ul class="actions special">
-            <li><a href="https://github.com/Terekip/COVID-19-EDA" target="_blank" class="button">View Project</a></li>
-          </ul>
+          <p>
+            Performed exploratory analysis on COVID-19 datasets using SQL Server to uncover insights.
+          </p>
+          <a href="https://github.com/Terekip/COVID-19-EDA" target="_blank" class="button">View Project</a>
         </article>
 
         <article>
-          <header>
-            <h2><a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank">IT Salary Survey Analysis (Python)</a></h2>
-          </header>
+          <h3>IT Salary Survey Analysis (Python)</h3>
           <a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank" class="image fit">
             <img src="images/surveys.png" alt="Python salary survey analysis chart" />
           </a>
-          <p>Explored salary trends in the IT industry using Python for insights into the EU job market.</p>
-          <ul class="actions special">
-            <li><a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank" class="button">View Project</a></li>
-          </ul>
+          <p>
+            Explored salary trends in the IT industry using Python for insights into the EU job market.
+          </p>
+          <a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank" class="button">View Project</a>
         </article>
 
         <article>
-          <header>
-            <h2><a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank">Twitter Sentiment Analysis (ML)</a></h2>
-          </header>
+          <h3>Twitter Sentiment Analysis (ML)</h3>
           <a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank" class="image fit">
             <img src="images/ml.avif" alt="Sentiment analysis word cloud" />
           </a>
-          <p>Analyzed 1.6M tweets using machine learning to classify sentiment as positive or negative.</p>
-          <ul class="actions special">
-            <li><a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank" class="button">View Project</a></li>
-          </ul>
+          <p>
+            Trained ML models on 1.6M tweets to classify sentiments as positive or negative.
+          </p>
+          <a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank" class="button">View Project</a>
         </article>
-      </section>
-    </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <section class="split contact" id="contact">
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="split contact">
         <section class="alt">
           <h3>Address</h3>
           <p>Bomet, Kenya</p>
@@ -142,13 +119,14 @@
             <li><a href="https://github.com/Terekip" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
           </ul>
         </section>
-      </section>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2025 Gilbert Terer. Design by <a href="https://html5up.net" target="_blank">HTML5 UP</a></p>
     </footer>
 
-    <!-- Copyright -->
-    <div id="copyright">
-      <ul><li>&copy; 2025 Gilbert Terer</li><li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li></ul>
-    </div>
   </div>
 
   <!-- Scripts -->
