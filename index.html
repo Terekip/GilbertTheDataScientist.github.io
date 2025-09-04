@@ -6,118 +6,78 @@
   <title>Gilbert Terer | Data Scientist</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      grid-template-rows: 1fr;
-      background: #f4f6f9;
-    }
-
-    /* Left side (profile) */
-    .profile {
-      background: #fff;
-      padding: 20px;
-      text-align: center;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      border-right: 2px solid #eee;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 30px;
+      max-width: 950px;
+      width: 95%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 25px;
+      align-items: center;
+    }
+    .profile {
+      text-align: center;
     }
     .profile img {
-      width: 160px;
-      height: 160px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .profile h1 {
-      font-size: 22px;
-      margin: 8px 0 4px;
+      font-size: 20px;
+      margin: 10px 0 5px;
     }
     .profile h2 {
       font-size: 14px;
       color: #666;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
-    .actions a {
-      display: inline-block;
-      padding: 10px 18px;
-      margin-top: 5px;
+    .profile .actions a {
+      padding: 6px 12px;
       background: #007bff;
       color: #fff;
       border-radius: 6px;
-      font-size: 14px;
       text-decoration: none;
+      font-size: 13px;
     }
-    .icons {
-      margin-top: 15px;
+    .info h3 {
+      margin: 5px 0;
+      font-size: 16px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 3px;
+    }
+    .projects, .contact {
+      margin-bottom: 10px;
+    }
+    .projects ul, .contact ul {
+      margin: 5px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .projects li, .contact li {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .projects a, .contact a {
+      color: #007bff;
+      text-decoration: none;
     }
     .icons a {
-      margin: 0 8px;
+      margin-right: 8px;
       font-size: 14px;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    /* Right side */
-    .info {
-      display: grid;
-      grid-template-rows: 1fr 2fr 0.5fr; /* About, Projects (biggest), Contact (smallest) */
-      gap: 20px;
-      padding: 30px;
-      box-sizing: border-box;
-      height: 100%;
-      overflow: hidden;
-    }
-    .section {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      overflow-y: auto;
-    }
-    .section h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-    }
-
-    /* About */
-    .about p {
-      font-size: 15px;
-      line-height: 1.6;
-      color: #444;
-    }
-
-    /* Projects */
-    .projects ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .projects li {
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-    .projects a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    /* Contact */
-    .contact ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .contact li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-    .contact a {
       color: #007bff;
       text-decoration: none;
     }
@@ -125,55 +85,41 @@
 </head>
 <body>
 
-  <!-- Left -->
-  <div class="profile">
-    <div>
+  <div class="card">
+    <!-- Left -->
+    <div class="profile">
       <img src="images/we.jpg" alt="Gilbert Terer">
       <h1>Kiprotich Gilbert Terer</h1>
       <h2>AI Engineer & Data Scientist</h2>
       <div class="actions">
         <a href="cv/GilbertTererCV.pdf" target="_blank">📄 Download CV</a>
       </div>
-    </div>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/kiprotich-terer-81532050/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Terekip" target="_blank">GitHub</a>
-    </div>
-  </div>
-
-  <!-- Right -->
-  <div class="info">
-    <!-- About -->
-    <div class="section about">
-      <h3>About Me</h3>
-      <p>
-        I am an AI Engineer and Data Scientist with expertise in machine learning, 
-        time-series forecasting, and data analytics. I enjoy building predictive 
-        models and developing data-driven solutions that solve real-world problems. 
-        Skilled in Python, SQL, and cloud-based workflows, I aim to leverage AI to 
-        improve decision-making in various domains.
-      </p>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/kiprotich-terer-81532050/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Terekip" target="_blank">GitHub</a>
+      </div>
     </div>
 
-    <!-- Projects -->
-    <div class="section projects">
-      <h3>Projects</h3>
-      <ul>
-        <li><a href="https://github.com/Terekip/HealthPredict">HealthPredict AI – Patient Forecasting</a></li>
-        <li><a href="https://github.com/Terekip/COVID-19-EDA">COVID-19 SQL Analytics</a></li>
-        <li><a href="https://github.com/Terekip/IT-Salary-survey-EU-2020">IT Salary Survey – Exploratory Data Analysis</a></li>
-        <li><a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis">Twitter Sentiment Analysis</a></li>
-      </ul>
-    </div>
+    <!-- Right -->
+    <div class="info">
+      <div class="projects">
+        <h3>Projects</h3>
+        <ul>
+          <li><a href="https://github.com/Terekip/HealthPredict">HealthPredict AI (Forecasting)</a></li>
+          <li><a href="https://github.com/Terekip/COVID-19-EDA">COVID-19 SQL Analytics</a></li>
+          <li><a href="https://github.com/Terekip/IT-Salary-survey-EU-2020">IT Salary Survey (Python)</a></li>
+          <li><a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis">Twitter Sentiment Analysis</a></li>
+        </ul>
+      </div>
 
-    <!-- Contact -->
-    <div class="section contact">
-      <h3>Contact</h3>
-      <ul>
-        <li>📍 Bomet, Kenya</li>
-        <li>📞 <a href="tel:+254725358911">+254 725 358 911</a></li>
-        <li>📧 <a href="mailto:teretich92@gmail.com">teretich92@gmail.com</a></li>
-      </ul>
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>📍 Bomet, Kenya</li>
+          <li>📞 <a href="tel:+254725358911">+254 725 358 911</a></li>
+          <li>📧 <a href="mailto:teretich92@gmail.com">teretich92@gmail.com</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 
