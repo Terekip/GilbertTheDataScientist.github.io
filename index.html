@@ -17,85 +17,67 @@
     .card {
       background: #fff;
       border-radius: 12px;
-      padding: 30px 40px;
-      max-width: 1200px;
+      padding: 20px 30px;
+      max-width: 950px;
       width: 95%;
-      height: 95%;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
       display: grid;
-      grid-template-columns: 250px 1fr;
-      gap: 30px;
-      align-items: flex-start;
+      grid-template-columns: 200px 1fr;
+      gap: 25px;
+      align-items: center;
     }
     .profile {
       text-align: center;
     }
     .profile img {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .profile h1 {
-      font-size: 24px;
-      margin: 15px 0 8px;
+      font-size: 20px;
+      margin: 10px 0 5px;
     }
     .profile h2 {
-      font-size: 16px;
+      font-size: 14px;
       color: #666;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     .profile .actions a {
-      padding: 8px 14px;
+      padding: 6px 12px;
       background: #007bff;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13px;
     }
     .info h3 {
-      margin: 10px 0;
-      font-size: 18px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
+      margin: 5px 0;
+      font-size: 16px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 3px;
     }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
+    .projects, .contact {
+      margin-bottom: 10px;
     }
-    .project {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fafafa;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-    .project:hover {
-      transform: scale(1.05);
-    }
-    .project img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      display: block;
-    }
-    .project p {
-      font-size: 14px;
-      margin: 8px 0;
-    }
-    .contact ul {
-      margin: 8px 0;
+    .projects ul, .contact ul {
+      margin: 5px 0;
       padding: 0;
       list-style: none;
+    }
+    .projects li, .contact li {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .projects a, .contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .icons a {
+      margin-right: 8px;
       font-size: 14px;
-    }
-    .contact li {
-      margin-bottom: 6px;
-    }
-    .contact a {
       color: #007bff;
       text-decoration: none;
     }
@@ -122,32 +104,12 @@
     <div class="info">
       <div class="projects">
         <h3>Projects</h3>
-        <div class="projects">
-          <div class="project">
-            <a href="https://github.com/Terekip/HealthPredict" target="_blank">
-              <img src="images/health.avif" alt="HealthPredict AI">
-              <p>HealthPredict AI (Forecasting)</p>
-            </a>
-          </div>
-          <div class="project">
-            <a href="https://github.com/Terekip/COVID-19-EDA" target="_blank">
-              <img src="images/covid19.jpg" alt="COVID-19 SQL Analytics">
-              <p>COVID-19 SQL Analytics</p>
-            </a>
-          </div>
-          <div class="project">
-            <a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank">
-              <img src="images/surveys.png" alt="IT Salary Survey">
-              <p>IT Salary Survey (Python)</p>
-            </a>
-          </div>
-          <div class="project">
-            <a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank">
-              <img src="images/ml.avif" alt="Twitter Sentiment Analysis">
-              <p>Twitter Sentiment Analysis</p>
-            </a>
-          </div>
-        </div>
+        <ul>
+          <li><a href="https://github.com/Terekip/HealthPredict">HealthPredict AI (Forecasting)</a></li>
+          <li><a href="https://github.com/Terekip/COVID-19-EDA">COVID-19 SQL Analytics</a></li>
+          <li><a href="https://github.com/Terekip/IT-Salary-survey-EU-2020">IT Salary Survey (Python)</a></li>
+          <li><a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis">Twitter Sentiment Analysis</a></li>
+        </ul>
       </div>
 
       <div class="contact">
@@ -163,4 +125,3 @@
 
 </body>
 </html>
-
