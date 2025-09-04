@@ -16,64 +16,77 @@
     }
     .card {
       background: #fff;
-      border-radius: 12px;
-      padding: 20px 30px;
-      max-width: 950px;
+      border-radius: 16px;
+      padding: 30px 40px;
+      max-width: 1200px; /* wider */
       width: 95%;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      height: 85vh; /* taller to cover more screen */
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
       display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 25px;
-      align-items: center;
+      grid-template-columns: 250px 1fr; /* bigger left panel */
+      gap: 35px;
+      align-items: start;
     }
     .profile {
       text-align: center;
     }
     .profile img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .profile h1 {
-      font-size: 20px;
-      margin: 10px 0 5px;
+      font-size: 24px;
+      margin: 12px 0 6px;
     }
     .profile h2 {
-      font-size: 14px;
+      font-size: 16px;
       color: #666;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .profile .actions a {
-      padding: 6px 12px;
+      padding: 8px 14px;
       background: #007bff;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 14px;
     }
     .info h3 {
       margin: 5px 0;
-      font-size: 16px;
+      font-size: 18px;
       border-bottom: 1px solid #eee;
-      padding-bottom: 3px;
+      padding-bottom: 4px;
     }
-    .projects, .contact {
-      margin-bottom: 10px;
+    .projects {
+      margin-bottom: 20px;
     }
-    .projects ul, .contact ul {
+    .projects ul {
+      margin: 8px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .projects li {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .projects a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .contact {
+      font-size: 13px; /* reduced size */
+      opacity: 0.9;
+    }
+    .contact ul {
       margin: 5px 0;
       padding: 0;
       list-style: none;
     }
-    .projects li, .contact li {
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-    .projects a, .contact a {
-      color: #007bff;
-      text-decoration: none;
+    .contact li {
+      margin-bottom: 3px;
     }
     .icons a {
       margin-right: 8px;
@@ -106,22 +119,4 @@
         <h3>Projects</h3>
         <ul>
           <li><a href="https://github.com/Terekip/HealthPredict">HealthPredict AI (Forecasting)</a></li>
-          <li><a href="https://github.com/Terekip/COVID-19-EDA">COVID-19 SQL Analytics</a></li>
-          <li><a href="https://github.com/Terekip/IT-Salary-survey-EU-2020">IT Salary Survey (Python)</a></li>
-          <li><a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis">Twitter Sentiment Analysis</a></li>
-        </ul>
-      </div>
-
-      <div class="contact">
-        <h3>Contact</h3>
-        <ul>
-          <li>📍 Bomet, Kenya</li>
-          <li>📞 <a href="tel:+254725358911">+254 725 358 911</a></li>
-          <li>📧 <a href="mailto:teretich92@gmail.com">teretich92@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-</body>
-</html>
+          <li><a href="https://github.com/Terekip/COVID-19-EDA">COVID-19 SQL Analytics</a></l
