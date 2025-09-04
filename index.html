@@ -16,100 +16,84 @@
     }
     .card {
       background: #fff;
-      border-radius: 16px;
-      padding: 40px;
+      border-radius: 12px;
+      padding: 30px 40px;
+      max-width: 1200px;
       width: 95%;
       height: 95%;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
       display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 40px;
+      grid-template-columns: 250px 1fr;
+      gap: 30px;
       align-items: flex-start;
     }
-    /* Profile */
     .profile {
       text-align: center;
     }
     .profile img {
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     .profile h1 {
-      font-size: 30px;
-      margin: 15px 0 5px;
+      font-size: 24px;
+      margin: 15px 0 8px;
     }
     .profile h2 {
-      font-size: 18px;
+      font-size: 16px;
       color: #666;
       margin-bottom: 15px;
     }
-    .about {
-      font-size: 16px;
-      line-height: 1.4;
-      color: #444;
-      margin: 10px 0 20px;
-    }
     .profile .actions a {
-      padding: 10px 18px;
+      padding: 8px 14px;
       background: #007bff;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
     }
-    .icons a {
-      margin: 0 8px;
-      font-size: 16px;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    /* Info */
     .info h3 {
       margin: 10px 0;
-      font-size: 20px;
+      font-size: 18px;
       border-bottom: 2px solid #eee;
-      padding-bottom: 6px;
+      padding-bottom: 5px;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
     }
     .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
       background: #fafafa;
-      border-radius: 10px;
-      padding: 12px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: scale(1.05);
     }
     .project img {
       width: 100%;
-      height: 150px;
+      height: 120px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 8px;
+      display: block;
     }
-    .project a {
-      text-decoration: none;
-      font-size: 15px;
-      color: #007bff;
-      font-weight: bold;
+    .project p {
+      font-size: 14px;
+      margin: 8px 0;
     }
-
-    /* Contact */
     .contact ul {
-      margin: 10px 0;
+      margin: 8px 0;
       padding: 0;
       list-style: none;
+      font-size: 14px;
     }
     .contact li {
-      font-size: 14px;
-      margin-bottom: 5px;
-      color: #444;
+      margin-bottom: 6px;
     }
     .contact a {
       color: #007bff;
@@ -125,7 +109,6 @@
       <img src="images/we.jpg" alt="Gilbert Terer">
       <h1>Kiprotich Gilbert Terer</h1>
       <h2>AI Engineer & Data Scientist</h2>
-      <p class="about">I am passionate about using Artificial Intelligence and Data Science to solve real-world problems, build predictive systems, and deliver impactful insights.</p>
       <div class="actions">
         <a href="cv/GilbertTererCV.pdf" target="_blank">📄 Download CV</a>
       </div>
@@ -137,23 +120,33 @@
 
     <!-- Right -->
     <div class="info">
-      <h3>Projects</h3>
       <div class="projects">
-        <div class="project">
-          <img src="images/project1.jpg" alt="HealthPredict AI">
-          <a href="https://github.com/Terekip/HealthPredict">HealthPredict AI (Forecasting)</a>
-        </div>
-        <div class="project">
-          <img src="images/project2.jpg" alt="COVID SQL">
-          <a href="https://github.com/Terekip/COVID-19-EDA">COVID-19 SQL Analytics</a>
-        </div>
-        <div class="project">
-          <img src="images/project3.jpg" alt="IT Salary Survey">
-          <a href="https://github.com/Terekip/IT-Salary-survey-EU-2020">IT Salary Survey (Python)</a>
-        </div>
-        <div class="project">
-          <img src="images/project4.jpg" alt="Twitter Sentiment">
-          <a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis">Twitter Sentiment Analysis</a>
+        <h3>Projects</h3>
+        <div class="projects">
+          <div class="project">
+            <a href="https://github.com/Terekip/HealthPredict" target="_blank">
+              <img src="images/healthpredict.jpg" alt="HealthPredict AI">
+              <p>HealthPredict AI (Forecasting)</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/Terekip/COVID-19-EDA" target="_blank">
+              <img src="images/covid.jpg" alt="COVID-19 SQL Analytics">
+              <p>COVID-19 SQL Analytics</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank">
+              <img src="images/salary.jpg" alt="IT Salary Survey">
+              <p>IT Salary Survey (Python)</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank">
+              <img src="images/twitter.jpg" alt="Twitter Sentiment Analysis">
+              <p>Twitter Sentiment Analysis</p>
+            </a>
+          </div>
         </div>
       </div>
 
