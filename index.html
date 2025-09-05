@@ -94,7 +94,7 @@
       line-height: 1.5;
     }
     .tools, .skills {
-      margin: 15px 0;
+      margin: 10px 0;
       max-width: 800px;
     }
     .tools h3, .skills h3 {
@@ -106,16 +106,16 @@
     }
     .tools-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
       justify-items: center;
     }
     .tool-item {
       text-align: center;
     }
     .tool-item img {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       object-fit: contain;
       transition: transform 0.3s;
     }
@@ -123,9 +123,9 @@
       transform: scale(1.1);
     }
     .tool-item p {
-      font-size: 12px;
+      font-size: 11px;
       color: #333;
-      margin: 5px 0 0;
+      margin: 4px 0 0;
     }
     .skills ul {
       list-style: none;
@@ -183,14 +183,14 @@
         font-size: 12px;
       }
       .tools-grid {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
       }
       .tool-item img {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
       }
       .tool-item p {
-        font-size: 11px;
+        font-size: 10px;
       }
       .skills ul li {
         font-size: 11px;
@@ -212,11 +212,14 @@
         font-size: 12px;
       }
       .tools-grid {
-        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
       }
       .tool-item img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
+      }
+      .tool-item p {
+        font-size: 9px;
       }
     }
     /* Google Analytics */
@@ -317,4 +320,3 @@
   </footer>
 </body>
 </html>
-
