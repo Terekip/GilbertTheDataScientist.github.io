@@ -93,12 +93,39 @@
       color: #333;
       line-height: 1.5;
     }
-    .skills h3 {
+    .tools, .skills {
+      margin: 15px 0;
+      max-width: 800px;
+    }
+    .tools h3, .skills h3 {
       font-size: 16px;
       color: #003087;
       border-bottom: 2px solid #eee;
       padding-bottom: 5px;
-      margin: 15px 0 10px;
+      margin-bottom: 10px;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+      justify-items: center;
+    }
+    .tool-item {
+      text-align: center;
+    }
+    .tool-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+    .tool-item img:hover {
+      transform: scale(1.1);
+    }
+    .tool-item p {
+      font-size: 12px;
+      color: #333;
+      margin: 5px 0 0;
     }
     .skills ul {
       list-style: none;
@@ -117,18 +144,21 @@
     }
     footer {
       display: flex;
-      justify-content:center;
-      align-items:center;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 15px;
       background: #003087;
       color: #fff;
       margin-top: auto;
-      min-height:60px;
+      min-height: 60px;
     }
     footer a {
       color: #e6f0fa;
       text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
     }
     @media (max-width: 768px) {
       .container {
@@ -146,14 +176,21 @@
       .profile h2 {
         font-size: 13px;
       }
-      .about h3 {
+      .about h3, .tools h3, .skills h3 {
         font-size: 15px;
       }
       .about p {
         font-size: 12px;
       }
-      .skills h3 {
-        font-size: 15px;
+      .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      }
+      .tool-item img {
+        width: 50px;
+        height: 50px;
+      }
+      .tool-item p {
+        font-size: 11px;
       }
       .skills ul li {
         font-size: 11px;
@@ -173,6 +210,13 @@
       }
       .profile h2 {
         font-size: 12px;
+      }
+      .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+      }
+      .tool-item img {
+        width: 40px;
+        height: 40px;
       }
     }
     /* Google Analytics */
@@ -206,17 +250,62 @@
         <h3>About Me</h3>
         <p>I am a passionate Data Scientist and AI Engineer based in Bomet, Kenya, with expertise in machine learning, predictive analytics, and data visualization. I specialize in building data-driven solutions for healthcare and IT, leveraging tools like Python, SQL, and TensorFlow to uncover insights and drive innovation.</p>
       </div>
+      <div class="tools">
+        <h3>Tools</h3>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <img src="images/tools/spark.png" alt="Apache Spark logo">
+            <p>Apache Spark</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/kafka.png" alt="Apache Kafka logo">
+            <p>Apache Kafka</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/airflow.png" alt="Apache Airflow logo">
+            <p>Apache Airflow</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/postgresql.png" alt="PostgreSQL logo">
+            <p>PostgreSQL</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/dbeaver.png" alt="DBeaver logo">
+            <p>DBeaver</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/python.png" alt="Python logo">
+            <p>Python</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/sql.png" alt="SQL logo">
+            <p>SQL</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/git.png" alt="Git logo">
+            <p>Git</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/snowflake.png" alt="Snowflake logo">
+            <p>Snowflake</p>
+          </div>
+          <div class="tool-item">
+            <img src="images/tools/cassandra.png" alt="Apache Cassandra logo">
+            <p>Cassandra</p>
+          </div>
+        </div>
+      </div>
       <div class="skills">
         <h3>Skills</h3>
         <ul>
-          <li>Python</li>
-          <li>Machine Learning</li>
-          <li>SQL</li>
-          <li>Pandas</li>
-          <li>TensorFlow</li>
-          <li>Jupyter Notebook</li>
-          <li>Data Visualization</li>
-          <li>AWS</li>
+          <li>Data Pipelining</li>
+          <li>Database Management</li>
+          <li>Big Data Processing</li>
+          <li>ETL/ELT Development</li>
+          <li>Cloud Computing</li>
+          <li>Data Integration</li>
+          <li>Workflow Orchestration</li>
+          <li>Version Control</li>
         </ul>
       </div>
     </div>
@@ -228,4 +317,3 @@
   </footer>
 </body>
 </html>
-
