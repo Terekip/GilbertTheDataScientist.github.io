@@ -42,17 +42,12 @@
       border-radius: 5px;
     }
     .container {
-      max-width: 1200px;
-      margin: 20px auto;
+      max-width: 600px;
+      margin: 40px auto;
       background: #fff;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 30px;
-    }
-    .profile {
       text-align: center;
     }
     .profile img {
@@ -61,50 +56,31 @@
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
     }
     .profile h1 {
-      margin: 15px 0 5px;
+      margin: 10px 0 5px;
       font-size: 24px;
       color: #003087;
     }
     .profile h2 {
       font-size: 16px;
       color: #666;
-      margin-bottom: 15px;
-    }
-    .profile p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #333;
-    }
-    .profile .actions a {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #003087;
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-      margin: 10px 0;
-      transition: background 0.3s;
-    }
-    .profile .actions a:hover {
-      background: #005bb5;
-    }
-    .skills {
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
     .skills h3 {
       font-size: 18px;
+      color: #003087;
       border-bottom: 2px solid #eee;
       padding-bottom: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .skills ul {
       list-style: none;
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
     }
     .skills ul li {
@@ -114,79 +90,12 @@
       font-size: 13px;
       color: #003087;
     }
-    .projects, .contact, .blog {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .projects h3, .contact h3, .blog h3 {
-      font-size: 18px;
-      color: #003087;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-    .project-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-    .project {
-      background: #f8f9fa;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .project img {
-      max-width: 100%;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-    .project a {
-      font-size: 14px;
-      text-decoration: none;
-      color: #003087;
-      font-weight: bold;
-    }
-    .project p {
-      font-size: 12px;
-      color: #666;
-      margin: 5px 0 0;
-    }
-    .contact p {
-      margin: 5px 0;
-      font-size: 14px;
-    }
-    .contact a {
-      color: #003087;
-      text-decoration: none;
-    }
-    .icons a {
-      margin-right: 15px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #003087;
-      transition: color 0.3s;
-    }
-    .icons a:hover {
-      color: #005bb5;
-    }
-    .blog p {
-      font-size: 14px;
-      color: #666;
-    }
     footer {
       text-align: center;
       padding: 20px;
       background: #003087;
       color: #fff;
-      margin-top: 20px;
+      margin-top: 40px;
     }
     footer a {
       color: #e6f0fa;
@@ -194,15 +103,10 @@
     }
     @media (max-width: 768px) {
       .container {
-        grid-template-columns: 1fr;
         padding: 20px;
-      }
-      .project-list {
-        grid-template-columns: 1fr;
       }
     }
     /* Google Analytics */
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -216,25 +120,19 @@
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
 
-  <!-- Main Container -->
+  <!-- Home Content -->
   <div class="container" id="home">
-    <!-- Left Column -->
     <div class="profile">
       <img src="images/we.jpg" alt="Profile picture of Kiprotich Gilbert Terer, a Data Scientist and AI Engineer">
       <h1>Kiprotich Gilbert Terer</h1>
       <h2>AI Engineer & Data Scientist</h2>
-      <p>I specialize in building machine learning models, predictive analytics, and data visualizations to solve real-world problems, with a focus on healthcare and IT data. Based in Bomet, Kenya, I’m passionate about leveraging data to drive insights and innovation.</p>
-      <div class="actions">
-        <a href="cv/GilbertTererCV.pdf" target="_blank" aria-label="Download Kiprotich Gilbert Terer's CV">📄 Download CV</a>
-      </div>
       <div class="skills">
         <h3>Skills</h3>
         <ul>
@@ -247,51 +145,6 @@
           <li>Data Visualization</li>
           <li>AWS</li>
         </ul>
-      </div>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/kiprotich-terer-81532050/" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Terekip" target="_blank" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-
-    <!-- Right Column -->
-    <div>
-      <div class="projects" id="projects">
-        <h3>Projects</h3>
-        <div class="project-list">
-          <div class="project">
-            <img src="images/Health.avif" alt="Screenshot of HealthPredict project">
-            <a href="https://github.com/Terekip/HealthPredict" target="_blank">Patient Number Prediction</a>
-            <p>Built a machine learning model to predict patient numbers in healthcare facilities using Python and scikit-learn.</p>
-          </div>
-          <div class="project">
-            <img src="images/covid19.jpg" alt="Screenshot of COVID-19 SQL Analysis project">
-            <a href="https://github.com/Terekip/COVID-19-EDA" target="_blank">COVID-19 SQL Analysis</a>
-            <p>Performed exploratory data analysis on COVID-19 data using SQL and visualized trends with Python.</p>
-          </div>
-          <div class="project">
-            <img src="images/surveys.png" alt="Screenshot of IT Salary Survey project">
-            <a href="https://github.com/Terekip/IT-Salary-survey-EU-2020" target="_blank">IT Salary Survey (Python)</a>
-            <p>Analyzed 2020 EU IT salary survey data using Python and Pandas to uncover salary trends.</p>
-          </div>
-          <div class="project">
-            <img src="images/ml.avif" alt="Screenshot of Twitter Sentiment Analysis project">
-            <a href="https://github.com/Terekip/Machine-Learning--Sentiment-analysis" target="_blank">Twitter Sentiment Analysis</a>
-            <p>Developed a sentiment analysis model for Twitter data using NLP and TensorFlow.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact" id="contact">
-        <h3>Contact</h3>
-        <p><strong><i class="fas fa-map-marker-alt"></i> Location:</strong> Bomet, Kenya</p>
-        <p><strong><i class="fas fa-phone"></i> Phone:</strong> <a href="tel:+254725358911">+254 725 358 911</a></p>
-        <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:teretich92@gmail.com">teretich92@gmail.com</a></p>
-      </div>
-
-      <div class="blog" id="blog">
-        <h3>Blog</h3>
-        <p>Coming soon: Insights on machine learning, data visualization, and AI applications in healthcare and beyond.</p>
       </div>
     </div>
   </div>
